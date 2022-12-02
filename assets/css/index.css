@@ -1,0 +1,91 @@
+:root {
+    --white-space: 10px;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+    background: rgb(179, 20, 20);
+}
+
+body {
+    padding: 10px;
+    height: 100vh;
+    /* background-color: #7fffd4; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+/* body {
+    padding: 10px;
+    height: 100vh;
+    background-color: #7fffd4;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} */
+
+
+.row {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* border: 3px dotted #5dd5ad; */
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    /* color: #144768; */
+    /* font-weight: bold; */
+    font-size: 30px;
+    background: #314755;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.row img {
+    width: 100px;
+    height: 100px;
+}
+.row p {
+    text-align: center;
+
+}
+/* .row {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+} */
+/* a {
+    width: 100%;
+    background-color: #fff;
+    border: 2px dotted rgb(31, 149, 170);
+    padding: var(--white-space);
+    border-radius: 7px;
+} */
+
+
+
+@media screen and (max-width:800px) 
+{
+    
+body {
+    grid-template-columns: repeat(2, 1fr);;
+}
+.row {
+    font-size: 24px;
+}
+}
